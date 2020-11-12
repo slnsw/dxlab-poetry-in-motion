@@ -1,0 +1,12 @@
+/* Webfont: NimbusRomNo9L-Reg */@font-face {
+    font-family: 'NimbusRomNo9L';
+    src: url('NimbusRomNo9L-Reg.eot'); /* IE9 Compat Modes */
+    src: url('NimbusRomNo9L-Reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('NimbusRomNo9L-Reg.woff') format('woff'), /* Modern Browsers */
+         url('NimbusRomNo9L-Reg.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('NimbusRomNo9L-Reg.svg#NimbusRomNo9L-Reg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

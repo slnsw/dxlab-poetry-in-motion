@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<title>SLNSW OCR</title> 		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="manifest" href="manifest.json"> 
+	</head>
+
+	<body>
+		<div id="loading-overlay">
+			<div id="loading-bar">
+				<span id="progress"></span>
+			</div>
+		  </div>		  
+		<div id="scene"></div>
+		<div id="info_btn">
+			<a href="#"><img src="img/info.png"></img></a>
+		</div>
+		<div id="takeover" class="modal active">
+			<div id="popup_content">
+				<div id="close_info_btn">
+					<a href="#"><img src="img/info.png"></img></a>
+				</div>
+				<h2>Poetry in Motion</h2>
+				<h4>DX Lab Digital Drop-in Program</h4>
+
+				<p><i>Poetry in Motion</i> is an experimental interactive using OCR (Optical Character Recognition) data from the <a href="https://collection.sl.nsw.gov.au/search?search=David%20scott%20mitchell&offset=0&subjectIds=M05NezEMGndMp%7C%7C%7CDavid%20Scott%20Mitchell%20Collection" target="_blank">Mitchell Library collection</a> at the State Library of NSW to create a traversable text landscape (in the vein of Google Maps). Pages are visualised side by side with the ability to add thousands of books to view.</p>
+
+				<p>Providing both a feeling for the vastness of the <a href="https://collection.sl.nsw.gov.au/search?search=David%20scott%20mitchell&offset=0&subjectIds=M05NezEMGndMp%7C%7C%7CDavid%20Scott%20Mitchell%20Collection" target="_blank">Mitchell Library collection</a> (in a macro sense), and the intimacy of the texts (in a micro sense), users can explore and uncover unexpected and serendipitous discoveries through directionally panning and zooming. Double-click on a paragraph to reveal the poetry in motion. Double-click anywhere on the page to return to the browse view.</p>
+
+				<div class="smaller">
+				<h3>Project Credits:</h3>
+				<h4>
+				<i>Designer/Artist</i> — Andrew van der Westhuyzen<br/>
+				<i>Developer</i> — Andrew Wright<br/>
+				<i>Producer</i> — Annabel Stevens<br/>
+			</h4>
+
+				<h3>A Collider Project</h3>
+				<h4><a href="http://collider.com.au">collider.com.au</a></h4>
+
+				<h3>About the Mitchell Library</h3>
+				<a href="https://collection.sl.nsw.gov.au/search?search=David%20scott%20mitchell&offset=0&subjectIds=M05NezEMGndMp%7C%7C%7CDavid%20Scott%20Mitchell%20Collection" target="_blank">The Mitchell Library collections</a> focus on Australia, documenting the history and society of Australian people including European exploration and discovery. The collection includes a wide range of formats, books, maps, works of art, photographs, coins, stamps, magazines, ephemera, sound recordings and
+				electronic resources. It is the pre-eminent collection of Australiana in the world.				
+			</div>
+			</div>
+		</div>
+		<script>
+			var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
+			if ( !isMobile )
+			{
+				document.getElementById("popup_content").classList.add ( "skinny" );
+			}else
+			{
+				document.getElementById("popup_content").classList.add ( "scrolly" );
+			}
+		</script>
+		<script src="js/slnsw.ocr.min.js"></script>
+	</body>
+</html>
