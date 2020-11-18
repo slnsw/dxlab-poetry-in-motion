@@ -1,0 +1,23 @@
+{
+  "name": "dxlab-poetry-in-motion",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/index.html",
+  "scripts": {
+    "start": "npx serve app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slnsw/dxlab-poetry-in-motion.git"
+  },
+  "author": "Kaho Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slnsw/dxlab-poetry-in-motion/issues"
+  },
+  "homepage": "https://github.com/slnsw/dxlab-poetry-in-motion#readme",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
