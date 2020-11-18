@@ -187,7 +187,15 @@ function OnReady ()
         sceneManager.zoom ( Math.pow(ev.scale, 0.1) ); 
     } );
 
-    input.get("tap").set({ enable : true, taps : 2, interval : 600 } )
+    const kUseDoubleClick = false;
+    if ( kUseDoubleClick )
+    {
+        input.get("tap").set({ enable : true, taps : 2, interval : 600 });
+    }else
+    {
+        input.get("tap").set({ enable : true });
+    }
+
     input.on("tap", (ev) => { sceneManager.onDoubleTap(ev); } );
 
     if ( kDebugBuild )
