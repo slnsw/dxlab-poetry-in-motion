@@ -86,7 +86,8 @@ h4 {
 }
 
 .main {
-  height: calc(100% - 6rem);
+  height: calc(100% - 12rem);
+  overflow: hidden;
 }
 
 .smaller {
@@ -213,7 +214,7 @@ canvas {
 #info_btn {
   z-index: 99;
   position: absolute;
-  top: 32px;
+  top: 106px; /* 32px; */
   right: 80px;
   margin-right: -60px;
 }
@@ -223,12 +224,14 @@ canvas {
 }
 
 .header {
-  width: 100%;
+  width: calc(100% - 4rem);
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  padding: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .header h1 {
@@ -238,10 +241,10 @@ canvas {
   text-decoration: none;
 }
 
-.headerLogos {
+/* .headerLogos {
   display: flex;
   align-items: flex-end;
-}
+} */
 
 .dxLogo {
   display: block;
@@ -255,8 +258,9 @@ canvas {
 .slLogo {
   height: 1.3em;
   margin-left: auto;
-  margin-right: 6rem;
+  /* margin-right: 2rem; */
   display: block;
+  /* align-self: flex-end; */
 }
 
 .slLogo img {
