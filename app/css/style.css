@@ -31,6 +31,18 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-weight: normal;
+  font-family: "icomoon";
+  font-style: normal;
+  src: url("/../assets/Fonts/icomoon.eot?azqktj");
+  src: url("/../assets/Fonts/icomoon.eot?azqktj#iefix")
+      format("embedded-opentype"),
+    url("/../assets/Fonts/icomoon.ttf?azqktj") format("truetype"),
+    url("/../assets/Fonts/icomoon.woff?azqktj") format("woff"),
+    url("/../assets/Fonts/icomoon.svg?azqktj#icomoon") format("svg");
+}
+
 html,
 body {
   width: 100%;
@@ -71,6 +83,10 @@ h4 {
   font-size: 14px;
   font-weight: normal;
   margin-top: -18px;
+}
+
+.main {
+  height: calc(100% - 6rem);
 }
 
 .smaller {
@@ -227,18 +243,6 @@ canvas {
   align-items: flex-end;
 }
 
-.headerLogos div {
-  align-self: flex-end;
-}
-
-.logoDivider {
-  height: 0.8em; /* var(--spacing-xxs); */
-  margin-top: auto;
-  margin-right: 1.4em; /* var(--spacing-sm); */
-  margin-left: 1.4em; /* var(--spacing-sm); */
-  border-left: 1px solid white; /* var(--colour-white); */
-}
-
 .dxLogo {
   display: block;
   height: 1.3em;
@@ -250,10 +254,248 @@ canvas {
 
 .slLogo {
   height: 1.3em;
-  margin-left: 4.5em;
+  margin-left: auto;
+  margin-right: 6rem;
   display: block;
 }
 
 .slLogo img {
   height: 100%;
+}
+
+.footer {
+  position: relative;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  min-height: 6.5em;
+  font-family: Lekton, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.46px;
+  line-height: 21px;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-top: 6em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__cc {
+  position: absolute;
+  left: 0;
+  font-size: 12.3px; /* var(--font-size-sm); */
+  line-height: 1;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  /* @extend .font-uppercase; */
+  text-transform: uppercase;
+
+  /* @include media-sm { */
+  top: 3.5em;
+  /* } */
+
+  /* &:link,
+  &:visited {
+    color: var(--colour-white);
+  } */
+}
+
+.footer__cc:link,
+.footer__cc:visited {
+  color: var(--colour-white);
+}
+
+.slnsw-icon,
+[class^="slnsw-icon-"],
+[class*=" slnsw-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-weight: normal;
+  font-family: "icomoon", sans-serif !important;
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: none;
+
+  /* Enable Ligatures ================ */
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slnsw-icon-facebook::before {
+  content: "\e600";
+}
+
+.slnsw-icon-twitter::before {
+  content: "\e605";
+}
+
+.slnsw-icon-flickr::before {
+  content: "\e601";
+}
+
+.slnsw-icon-instagram::before {
+  content: "\e602";
+}
+
+.slnsw-icon-youtube::before {
+  content: "\e943";
+}
+
+.slnsw-icon-pinterest::before {
+  content: "\e603";
+}
+
+.slnsw-icon-rss::before {
+  content: "\e604";
+}
+
+.footer__social {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -0.2em;
+  font-size: var(--font-size-xlg);
+
+  /* Line decoration */
+  /* @include media-md {
+    &::before {
+      position: absolute;
+      bottom: -0.9em;
+      left: 0.35em;
+      width: 2.5em;
+      border-bottom: 1px solid var(--colour-white);
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 3em;
+      right: 0.2em;
+      height: 0.5em;
+      border-right: 1px solid var(--colour-white);
+      content: '';
+    }
+  } */
+
+  /* & a:link,
+  & a:visited {
+    color: var(--colour-white);
+  }
+
+  & a:hover {
+    color: var(--colour-highlight);
+    text-decoration: none;
+  } */
+}
+
+.footer__social::before {
+  position: absolute;
+  bottom: -0.9em;
+  left: 0.35em;
+  width: 2.5em;
+  border-bottom: 1px solid white;
+  content: "";
+}
+
+.footer__social::after {
+  position: absolute;
+  top: 3em;
+  right: 0.2em;
+  height: 0.5em;
+  border-right: 1px solid white;
+  content: "";
+}
+
+.footer__social a:link,
+.footer__social a:visited {
+  color: white;
+}
+
+.footer__social a:hover {
+  color: var(--colour-highlight);
+  text-decoration: none;
+}
+
+ul.footer-menu {
+  position: relative;
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
+  font-size: 12.3px; /* var(--font-size-sm); */
+  text-transform: uppercase;
+  flex-direction: row;
+  order: 3;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: left;
+  margin-right: 1em;
+}
+
+.footer li {
+  list-style: none;
+  margin-left: 1em;
+}
+
+ul.footer-menu li::after {
+  margin-left: 1em;
+
+  content: "/";
+}
+
+ul.footer-menu li:last-child::after {
+  content: "";
+}
+
+ul.footer-menu a:link,
+ul.footer-menu a:visited {
+  color: white;
+}
+
+ul.footer-menu::after {
+  position: absolute;
+  left: -3em;
+  width: 3em;
+  border-top: 1px solid white;
+  content: "";
+  top: -1em;
+  bottom: auto;
+}
+
+.footer__nsw-logo {
+  position: relative;
+  height: auto;
+  margin-left: 2em;
+}
+
+.footer__nsw-logo img {
+  display: flex;
+  margin-bottom: 0;
+  width: 4em;
+  margin-right: -0.3em;
+}
+
+.footer__nsw-logo::after {
+  position: absolute;
+  right: 0;
+  height: 3.5em;
+  border-right: 1px solid white;
+  content: "";
+  bottom: -2.2em;
+  width: 21px; /*  var(--spacing-lg); */
+  border-right: none;
+  border-bottom: none;
 }
