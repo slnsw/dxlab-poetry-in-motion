@@ -275,7 +275,9 @@ canvas {
   z-index: 7;
   display: flex;
   flex-direction: column;
-  min-height: 6.5em;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  min-height: 6.5rem;
   font-family: Lekton, sans-serif;
   font-weight: 400;
   letter-spacing: 2.46px;
@@ -283,36 +285,31 @@ canvas {
   flex-flow: row wrap;
   align-items: baseline;
   justify-content: flex-end;
-  margin-top: 6em;
+  margin-top: 4rem;
 }
 
 .footer a {
   text-decoration: none;
 }
 
+.footer a:hover {
+  text-decoration: underline;
+}
+
 .footer__cc {
   position: absolute;
-  left: 0;
+  left: 2.4rem;
   font-size: 12.3px; /* var(--font-size-sm); */
   line-height: 1;
   transform: rotate(-90deg);
   transform-origin: top left;
-  /* @extend .font-uppercase; */
   text-transform: uppercase;
-
-  /* @include media-sm { */
   top: 3.5em;
-  /* } */
-
-  /* &:link,
-  &:visited {
-    color: var(--colour-white);
-  } */
 }
 
 .footer__cc:link,
 .footer__cc:visited {
-  color: var(--colour-white);
+  color: white;
 }
 
 .slnsw-icon,
@@ -375,38 +372,7 @@ canvas {
   display: flex;
   justify-content: flex-end;
   margin-right: -0.2em;
-  font-size: var(--font-size-xlg);
-
-  /* Line decoration */
-  /* @include media-md {
-    &::before {
-      position: absolute;
-      bottom: -0.9em;
-      left: 0.35em;
-      width: 2.5em;
-      border-bottom: 1px solid var(--colour-white);
-      content: '';
-    }
-
-    &::after {
-      position: absolute;
-      top: 3em;
-      right: 0.2em;
-      height: 0.5em;
-      border-right: 1px solid var(--colour-white);
-      content: '';
-    }
-  } */
-
-  /* & a:link,
-  & a:visited {
-    color: var(--colour-white);
-  }
-
-  & a:hover {
-    color: var(--colour-highlight);
-    text-decoration: none;
-  } */
+  font-size: 27px; /* var(--font-size-xlg); */
 }
 
 .footer__social::before {
@@ -433,7 +399,7 @@ canvas {
 }
 
 .footer__social a:hover {
-  color: var(--colour-highlight);
+  color: #e6007e; /* var(--colour-highlight); */
   text-decoration: none;
 }
 
@@ -447,7 +413,7 @@ ul.footer-menu {
   flex-direction: row;
   order: 3;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   text-align: left;
   margin-right: 1em;
 }
@@ -491,7 +457,7 @@ ul.footer-menu::after {
 .footer__nsw-logo img {
   display: flex;
   margin-bottom: 0;
-  width: 4em;
+  width: 3em;
   margin-right: -0.3em;
 }
 
