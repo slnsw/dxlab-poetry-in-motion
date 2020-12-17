@@ -288,10 +288,15 @@ canvas {
   font-weight: 400;
   letter-spacing: 2.46px;
   line-height: 21px;
-  flex-flow: row wrap;
-  align-items: baseline;
-  justify-content: flex-end;
   margin-top: 4rem;
+}
+
+@media only screen and (min-width: 36em) {
+  .footer {
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
 }
 
 .footer a {
@@ -304,18 +309,24 @@ canvas {
 
 .footer__cc {
   position: absolute;
-  left: 2.4rem;
+  top: 4.8em;
+  left: 2rem;
   font-size: 12.3px; /* var(--font-size-sm); */
   line-height: 1;
   transform: rotate(-90deg);
   transform-origin: top left;
   text-transform: uppercase;
-  top: 3.5em;
 }
 
 .footer__cc:link,
 .footer__cc:visited {
   color: white;
+}
+
+@media only screen and (min-width: 36em) {
+  .footer__cc {
+    top: 3.5em;
+  }
 }
 
 .slnsw-icon,
@@ -379,24 +390,7 @@ canvas {
   justify-content: flex-end;
   margin-right: -0.2em;
   font-size: 27px; /* var(--font-size-xlg); */
-}
-
-.footer__social::before {
-  position: absolute;
-  bottom: -0.9em;
-  left: 0.35em;
-  width: 2.5em;
-  border-bottom: 1px solid white;
-  content: "";
-}
-
-.footer__social::after {
-  position: absolute;
-  top: 3em;
-  right: 0.2em;
-  height: 0.5em;
-  border-right: 1px solid white;
-  content: "";
+  padding-bottom: 1em;
 }
 
 .footer__social a:link,
@@ -409,34 +403,67 @@ canvas {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 48em) {
+  .footer__social {
+    padding-bottom: 0;
+  }
+
+  .footer__social::before {
+    position: absolute;
+    bottom: -0.9em;
+    left: 0.35em;
+    width: 2.5em;
+    border-bottom: 1px solid white;
+    content: "";
+  }
+
+  .footer__social::after {
+    position: absolute;
+    top: 3em;
+    right: 0.2em;
+    height: 0.5em;
+    border-right: 1px solid white;
+    content: "";
+  }
+}
+
 ul.footer-menu {
   position: relative;
   display: flex;
+  flex-direction: column;
   margin-top: 0;
   padding-left: 0;
   font-size: 12.3px; /* var(--font-size-sm); */
   text-transform: uppercase;
-  flex-direction: row;
-  order: 3;
-  width: 100%;
-  margin-bottom: 2rem;
-  text-align: left;
-  margin-right: 1em;
+  text-align: right;
+  margin-right: 0;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 36em) {
+  ul.footer-menu {
+    flex-direction: row;
+    order: 3;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 1em;
+    text-align: left;
+  }
+
+  ul.footer-menu li::after {
+    margin-left: 1em;
+    content: "/";
+    margin-right: 1em;
+  }
+
+  ul.footer-menu li:last-child::after {
+    content: "";
+  }
 }
 
 .footer li {
   list-style: none;
-  margin-left: 1em;
-}
-
-ul.footer-menu li::after {
-  margin-left: 1em;
-
-  content: "/";
-}
-
-ul.footer-menu li:last-child::after {
-  content: "";
+  /* margin-left: 1em; */
 }
 
 ul.footer-menu a:link,
@@ -446,35 +473,67 @@ ul.footer-menu a:visited {
 
 ul.footer-menu::after {
   position: absolute;
+  bottom: 0.5em;
   left: -3em;
   width: 3em;
   border-top: 1px solid white;
   content: "";
-  top: -1em;
-  bottom: auto;
+  top: 6em;
+  /* bottom: auto; */
+}
+
+@media only screen and (min-width: 36em) {
+  ul.footer-menu::after {
+    top: -1em;
+    bottom: auto;
+  }
 }
 
 .footer__nsw-logo {
   position: relative;
   height: auto;
-  margin-left: 2em;
+  /* margin-left: 2em; */
 }
 
 .footer__nsw-logo img {
   display: flex;
   margin-bottom: 0;
-  width: 3em;
-  margin-right: -0.3em;
+  width: 2em;
+  /* margin-right: -0.3em; */
 }
 
 .footer__nsw-logo::after {
   position: absolute;
   right: 0;
+  bottom: -1em;
   height: 3.5em;
   border-right: 1px solid white;
   content: "";
-  bottom: -2.2em;
-  width: 21px; /*  var(--spacing-lg); */
-  border-right: none;
-  border-bottom: none;
+  /*  width: 21px; /*  var(--spacing-lg); */
+  /* border-right: none;
+  border-bottom: none; */
+}
+
+@media only screen and (min-width: 36em) {
+  .footer__nsw-logo {
+    margin-left: 2em;
+  }
+
+  .footer__nsw-logo img {
+    width: 3em;
+    margin-right: -0.3em;
+  }
+
+  .footer__nsw-logo::after {
+    bottom: -2.2em;
+    width: 21px; /*  var(--spacing-lg); */
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+}
+
+@media only screen and (min-width: 36em) {
+  .footer__nsw-logo::after {
+    border-bottom: none;
+  }
 }
