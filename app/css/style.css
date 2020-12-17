@@ -174,7 +174,7 @@ canvas {
 
 .modal {
   z-index: 101;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
@@ -197,14 +197,17 @@ canvas {
 
 #popup_content {
   padding: 10px;
-  height: 100%;
+  /* height: auto; */
+  display: block;
+  cursor: pointer;
 }
 
 .skinny {
-  position: absolute;
+  /* position: absolute; */
   width: 60%;
-  left: 20%;
-  top: 10%;
+  /* left: 20%; */
+  /* top: 10%; */
+  margin: 0 auto 0;
 }
 
 .scrolly {
@@ -214,7 +217,7 @@ canvas {
 #info_btn {
   z-index: 99;
   position: absolute;
-  top: 106px; /* 32px; */
+  top: 32px;
   right: 80px;
   margin-right: -60px;
 }
