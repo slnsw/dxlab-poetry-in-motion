@@ -226,6 +226,12 @@ canvas {
   z-index: 102;
 }
 
+#close_btn {
+  z-index: 102;
+  float: right;
+  padding-right: 0.5em;
+}
+
 .header {
   width: calc(100% - 4rem);
   display: flex;
