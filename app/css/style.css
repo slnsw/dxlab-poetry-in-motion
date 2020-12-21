@@ -35,12 +35,12 @@
   font-weight: normal;
   font-family: "icomoon";
   font-style: normal;
-  src: url("/../assets/Fonts/icomoon.eot?azqktj");
-  src: url("/../assets/Fonts/icomoon.eot?azqktj#iefix")
+  src: url("../assets/Fonts/icomoon.eot?azqktj");
+  src: url("../assets/Fonts/icomoon.eot?azqktj#iefix")
       format("embedded-opentype"),
-    url("/../assets/Fonts/icomoon.ttf?azqktj") format("truetype"),
-    url("/../assets/Fonts/icomoon.woff?azqktj") format("woff"),
-    url("/../assets/Fonts/icomoon.svg?azqktj#icomoon") format("svg");
+    url("../assets/Fonts/icomoon.ttf?azqktj") format("truetype"),
+    url("../assets/Fonts/icomoon.woff?azqktj") format("woff"),
+    url("../assets/Fonts/icomoon.svg?azqktj#icomoon") format("svg");
 }
 
 html,
