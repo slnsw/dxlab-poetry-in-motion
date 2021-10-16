@@ -1,3 +1,7 @@
+# UPDATE
+
+hosted in S3 bucket now - Oct 2021
+
 # Poetry in Motion
 
 Poetry in Motion is an experimental interactive experience using OCR'd text from the David Scott Mitchell Collection. It was made by Collider as part of a DX Lab Digital Drop-in. It uses three.js
